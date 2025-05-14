@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Expandir/Encolher</title>
+  <style>
+    #paragrafo {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    #paragrafo.mostrar {
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleParagrafo()">Mostrar/Ocultar</button>
+  <p id="paragrafo">Este é um parágrafo com transição suave.</p>
+  <script src="ex5.js"></script>
+</body>
+</html>
